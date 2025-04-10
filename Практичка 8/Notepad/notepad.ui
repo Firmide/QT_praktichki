@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>771</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>790</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufgd">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newFile"/>
+    <addaction name="openFile"/>
+    <addaction name="saveFile"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="undo"/>
+    <addaction name="copy"/>
+    <addaction name="paste"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>Выравнивание</string>
+     </property>
+     <addaction name="alignLeft"/>
+     <addaction name="alignCenter"/>
+     <addaction name="alignRight"/>
+    </widget>
+    <addaction name="font"/>
+    <addaction name="menu_3"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Найти</string>
+    </property>
+    <addaction name="search"/>
+    <addaction name="gotoLine"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="about"/>
+   </widget>
+   <addaction name="menufgd"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newFile">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+  </action>
+  <action name="openFile">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+  </action>
+  <action name="undo">
+   <property name="text">
+    <string>Отменить</string>
+   </property>
+  </action>
+  <action name="copy">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="paste">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="font">
+   <property name="text">
+    <string>Шрифт</string>
+   </property>
+  </action>
+  <action name="alignLeft">
+   <property name="text">
+    <string>Слева</string>
+   </property>
+  </action>
+  <action name="alignCenter">
+   <property name="text">
+    <string>По центру</string>
+   </property>
+  </action>
+  <action name="alignRight">
+   <property name="text">
+    <string>Справа</string>
+   </property>
+  </action>
+  <action name="search">
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </action>
+  <action name="gotoLine">
+   <property name="text">
+    <string>Перейти к строке</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
